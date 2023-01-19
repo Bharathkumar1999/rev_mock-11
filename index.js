@@ -1,10 +1,10 @@
 const express= require("express");
 const jwt= require("jsonwebtoken")
-const {connection}= require("../config/db");
-const {UserModel}= require("../models/User.model");
-// const {notesRouter}= require("./routes/notes.route")
+const {connection}= require("./config/db");
+const {UserModel}= require("./models/User.model");
+
 const bcrypt = require('bcrypt');
-// const { authenticate } = require("./middlewares/authentication");
+
 const cors= require('cors');
 
 const app= express();
